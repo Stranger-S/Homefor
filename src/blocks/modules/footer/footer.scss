@@ -19,6 +19,9 @@ footer {
         flex-direction: column;
         margin: 0 auto;
     }
+    @media (max-width: 780px) {
+        width: 100%;
+    }
 }
 .nav-footer {
     display: flex;
@@ -29,6 +32,14 @@ footer {
     @media (max-width: 1200px) {
         padding-top: 30px;
         margin: 0 auto;
+    }
+    @media (max-width: 780px) {
+        flex-direction: column;
+    }
+    &__item {
+        @media (max-width: 780px) {
+            margin-bottom: 20px;
+        }
     }
     &__link {
         text-decoration: none;
@@ -44,6 +55,9 @@ footer {
     font-size: 1.6rem;
     padding-top: 27px;
     padding-left: 5px;
+    @media (max-width: 780px) {
+        padding-top: 0;
+    }
     &__label {
         color: $dark;
         display: block;
@@ -71,6 +85,9 @@ footer {
         border: none;
         margin-left: -3px;
         transition: 0.3s ease;
+        @media (max-width: 780px) {
+            margin-top: 20px;
+        }
         &:hover {
             background-color: $violet;
         }
@@ -79,6 +96,9 @@ footer {
         display: block;
         color: rgba($color: $dark, $alpha: 0.8);
         margin-top: 16px;
+        @media (max-width: 780px) {
+            margin-top: 30px;
+        }
     }
 }
 .footer-item {
@@ -94,12 +114,26 @@ footer {
         @media (max-width: 1200px) {
             margin-top: 30px;
         }
+        @media (max-width: 780px) {
+            display: none;
+        }
         &:hover {
             color: $violet;
         }
     }
     &__tel-mobile {
         display: none;
+        @media (max-width: 780px) {
+            display: block;
+            text-decoration: none;
+            font-size: 3.4rem;
+            font-weight: 500;
+            color: $dark;
+            letter-spacing: 0.8px;
+            display: block;
+            transition: 0.3s ease;
+            margin-bottom: 20px;
+        }
     }
 }
 .footer-social {
